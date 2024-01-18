@@ -29,9 +29,12 @@
     <ClInclude Include="Libraries.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Prototypes.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication2.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
@@ -44,6 +47,12 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="ExtractElementsAboveP.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="mainMenu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="InOut.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

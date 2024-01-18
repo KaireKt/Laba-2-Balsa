@@ -128,13 +128,16 @@
   <ItemGroup>
     <ClInclude Include="Libraries.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Prototypes.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="ConsoleApplication2.cpp" />
+    <ClCompile Include="InOut.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="ExtractElementsAboveP.cpp" />
     <ClCompile Include="FillMatrix.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
