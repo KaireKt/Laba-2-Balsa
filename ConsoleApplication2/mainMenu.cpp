@@ -13,10 +13,12 @@ int mainMenu(array<System::String^>^ args)
     Console::WriteLine("1 -> Ввод значений");
     Console::WriteLine("2 -> Решение и вывод");
     Console::WriteLine("0 -> Завершение программы");
+
+    array<int, 2>^ W = nullptr;
+    array<int, 2>^ Z = nullptr;
     do
     {
-        array<int, 2>^ W = nullptr;
-        array<int, 2>^ Z = nullptr;
+
 
         choice = Convert::ToChar(Console::ReadLine());
         switch (choice)
@@ -33,7 +35,7 @@ int mainMenu(array<System::String^>^ args)
             Console::WriteLine("1 -> Ввод значений");
             Console::WriteLine("2 -> Решение и вывод");
             Console::WriteLine("0 -> Завершение программы");
-            
+            break;
         case '2':
             if (count > 0)
                 Display(W, Z, rows, cols);
