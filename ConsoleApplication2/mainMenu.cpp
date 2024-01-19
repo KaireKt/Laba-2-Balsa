@@ -33,6 +33,7 @@ int mainMenu(array<System::String^>^ args)
             Console::WriteLine("1 -> Ввод значений");
             Console::WriteLine("2 -> Решение и вывод");
             Console::WriteLine("0 -> Завершение программы");
+            
         case '2':
             if (count > 0)
                 Display(W, Z, rows, cols);
@@ -42,7 +43,14 @@ int mainMenu(array<System::String^>^ args)
             Console::WriteLine("1 -> Ввод значений");
             Console::WriteLine("2 -> Решение и вывод");
             Console::WriteLine("0 -> Завершение программы");
+            break;
+        case '0':
+            break;
+        default:
+            Console::WriteLine("unexpected rror");
+            break;
         }
+        
     } while (choice != '0');
 
     return 0;
