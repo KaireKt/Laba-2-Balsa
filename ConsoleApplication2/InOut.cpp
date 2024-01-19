@@ -5,11 +5,13 @@ void In(int rows, int cols)
 {
     while (true)
     {
+        int temp;
         Console::Write("Введите количество рядов в массиве: ");
-        if (Int32::TryParse(Console::ReadLine(), rows))
+        if (Int32::TryParse(Console::ReadLine(), temp))
         {
             if (rows <= 4 && rows > 0)
             {
+                rows = temp;
                 break;
             }
             Console::WriteLine("Неверное значение");

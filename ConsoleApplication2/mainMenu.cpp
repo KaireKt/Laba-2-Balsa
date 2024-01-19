@@ -5,8 +5,8 @@
 int mainMenu(array<System::String^>^ args)
 {
     int count = 0;
-    int rows = 2;
-    int cols = 2;
+    int rows = 4;
+    int cols = 6;
     char choice = '100';
 
     Console::WriteLine("Выберите задание:");
@@ -23,7 +23,6 @@ int mainMenu(array<System::String^>^ args)
         {
         case '1':
             count += 1;
-            In(rows, cols);
 
             W = gcnew array<int, 2>(rows, cols);
             Z = gcnew array<int, 2>(rows, cols);
@@ -39,7 +38,7 @@ int mainMenu(array<System::String^>^ args)
                 Display(W, Z, rows, cols);
             else 
                 Console::WriteLine("Вы не ввели значения");
-            Console::WriteLine("Выберите задание:");
+            Console::WriteLine("\nВыберите задание:");
             Console::WriteLine("1 -> Ввод значений");
             Console::WriteLine("2 -> Решение и вывод");
             Console::WriteLine("0 -> Завершение программы");
